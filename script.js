@@ -56,7 +56,7 @@ current_cactus = Math.floor(Math.random() * 4);
         else {
             console.log("win");
         }
-    }, 300);
+    }, 200);
 
 
 //dino movement
@@ -64,7 +64,7 @@ window.addEventListener("keydown", function (e) {
 
     if (flag == 0 && (e.keyCode == 38 || e.keyCode == 32 || e.keyCode == 13)) {
         clickAudio.play();
-        dino.style.bottom = "300px";
+        dino.style.bottom = "150px";
         flag = 1;
         let dino_down = this.setTimeout(() => {
             dino.style.bottom = "0px";

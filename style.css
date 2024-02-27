@@ -64,7 +64,7 @@ body {
     position: absolute;
     /* border:1px solid black; */
     bottom:0;
-    transition:all 0.4s;
+    transition:all 0.1s;
   }
 .dino img{
     width:100%;
