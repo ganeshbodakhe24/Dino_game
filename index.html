@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kode+Mono:wght@400..700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/dinosaur.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="heading">
+        <p>Welcome to Dino Game</p>
+        <h4>Score : <span id="score"></span></h4>
+    </div>
+    <!-- cloud-->
+    <div class="game_body_outer">
+        <div class="cloud cloud1">
+            <img src="img/cloud_1.png">
+        </div>
+        <div class="cloud cloud2">
+            <img src="img/cloud_1.png">
+        </div>
+        <div class="cloud cloud3">
+            <img src="img/cloud_1.png">
+        </div>
+        <div id="dino" class="dino">
+            <img src="/img/dinosaur.png">
+        </div>
+        <!-- cactus -->
+        <div class="cactus ">
+            <img src="img/cactus_1.png">
+        </div>
+        <div class="cactus  ">
+            <img src="img/cactus_2.png">
+        </div>
+        <div class="cactus ">
+            <img src="img/cactus_3.png">
+        </div>
+        <div class="cactus ">
+            <img src="img/cactus_4.png">
+        </div>
+    </div>
+    <div class="start_btn">
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <!-- audio -->
+    <div>
+        <audio src="lose.wav" id="loseAudio"></audio>
+        <audio src="click.wav" id="clickAudio"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

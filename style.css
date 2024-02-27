@@ -1,0 +1,123 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Kode Mono", monospace;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  line-height: 10px;
+}
+.game_body_outer {
+  margin: auto;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  .game_body_outer {
+    /* height:20rem; */
+  }
+}
+.cloud {
+  height: 100px;
+  width: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  right:-100px;
+  position: absolute;
+ 
+}
+.cloud1{
+    animation:cloud 7s infinite linear;
+    animation-delay:1s;
+}
+.cloud2{
+    animation:cloud 5s infinite linear;
+    animation-delay:1.6s;
+}
+.cloud3{
+    animation:cloud 6s infinite linear;
+    animation-delay:1.3s;
+}
+.cloud img {
+  width: 100%;
+}
+
+@keyframes cloud{
+    0% {
+      right: -100px;
+    }
+    100% {
+      right: 1200px;
+    }
+  }
+
+  .dino{
+    height:130px;
+    width:100px;
+    position: absolute;
+    /* border:1px solid black; */
+    bottom:0;
+    transition:all 0.4s;
+  }
+.dino img{
+    width:100%;
+}
+
+.cactus{
+    position:absolute;
+    bottom:0;
+    height:100px;
+    width:200px;
+    /* border:1px solid black; */
+    right:-200px;
+    /* right:1200px; */
+
+}
+.cactus_ani{
+    animation:cactus 1s infinite linear;
+}
+.cactus img{
+    height:100%;
+}
+@keyframes cactus {
+    from{
+        right:-300px
+    }
+    to{
+        right:1200px;
+    }
+}
+.start_btn{
+width:100%;
+display: flex;
+justify-content:center;
+
+}
+.start_btn button{
+  font-family: "Kode Mono", monospace;
+  height:40px;
+  width:200px;
+  text-align: center;
+  margin:20px;
+  border: 1px solid rgb(206, 206, 206);
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  /* outline:1px solid rgb(0, 0, 0); */
+  border-radius:5px;
+  font-size:20px;
+  /* border:; */
+}
+
+.start_btn button:hover{
+  background-color: rgb(213, 213, 213);
+}
+.start_btn button:active{
+  background-color: burlywood;
+}
